@@ -77,6 +77,7 @@
 \usepackage{nameref}
 \usepackage{booktabs}
 \usepackage{graphicx}
+\usepackage{rotating}
 \usepackage{float}
 \usepackage{multirow}
 
@@ -354,11 +355,11 @@ Desta forma, o Curso Técnico Integrado ao Ensino Médio em Biotecnologia, em co
 \subsection{Duração e Carga Horária}
 \indent
 
-O Curso tem duração total de~\VER{3802} horas distribuídas em três anos.
+O Curso tem duração total de~\VER{3910} horas distribuídas em três anos.
 A carga horária total está assim distruída:
 \begin{itemize}
 	\item \VER{3078} horas de disciplinas com ementas categóricas
-	\item \VER{324} horas de disciplinas com ementas flexíveis
+	\item \VER{432} horas de disciplinas com ementas flexíveis
 	\item \VER{200} horas de estágio curricular
 	\item \VER{200} horas de atividades complementares
 \end{itemize}
@@ -386,46 +387,45 @@ As disciplinas estão organizadas em séries anuais, conforme a Tabela~\ref{tab:
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|l|l|l|}
 			\hline
-			Núcleo                                                                     & Disciplinas                                      & 1º Ano     & 2º Ano    & 3º Ano    & CH Totais \\ \hline
-			\multirow{12}{*}{Básico}& \nameref{disc:artes}                             & 2          & 2         & 0         & 108       \\ \cline{2-6} 
-			& \nameref{disc:ingles}                                                    & 4          & 0         & 0         & 108       \\ \cline{2-6} 
-			& \nameref{disc:educacaofisica}                                            & 2          & 2         & 0         & 108       \\ \cline{2-6} 
-			& \nameref{disc:linguaportuguesa}                                          & 4          & 4         & 4         & 324       \\ \cline{2-6} 
-			& \nameref{disc:matematica}                                                & 2          & 4         & 2         & 216       \\ \cline{2-6} 
-			& \nameref{disc:geografia}                                                 & 2          & 2         & 2         & 162       \\ \cline{2-6} 
-			& \nameref{disc:historia}                                                  & 2          & 2         & 2         & 162       \\ \cline{2-6} 
-			& \nameref{disc:fisica}                                                    & 2          & 2         & 2         & 162       \\ \cline{2-6} 
-			& \nameref{disc:quimica}                                                   & 4          & 0         & 0         & 108       \\ \cline{2-6} 
-			& \nameref{disc:biologia}                                                  & 4          & 0         & 0         & 108       \\ \cline{2-6} 
-			& \nameref{disc:filosofia}                                                 & 2          & 2         & 2         & 162       \\ \cline{2-6} 
-			& \nameref{disc:sociologia}                                                & 2          & 2         & 2         & 162       \\ \hline
-			\multicolumn{2}{|l|}{Carga horária semanal Núcleo Básico}                  & 32         & 22        & 16        & 1890      \\ \hline
+			Núcleo                                                                         & Disciplinas                                      & 1º Ano     & 2º Ano    & 3º Ano    & CH Totais \\ \hline
+			\multirow{12}{*}{Básico}& \nameref{disc:artes}                                 & 2          & 2         & 0         & 108       \\ \cline{2-6} 
+			& \nameref{disc:ingles}                                                        & 4          & 0         & 0         & 108       \\ \cline{2-6} 
+			& \nameref{disc:educacaofisica}                                                & 2          & 2         & 0         & 108       \\ \cline{2-6} 
+			& \nameref{disc:linguaportuguesa}                                              & 4          & 4         & 4         & 324       \\ \cline{2-6} 
+			& \nameref{disc:matematica}                                                    & 2          & 4         & 2         & 216       \\ \cline{2-6} 
+			& \nameref{disc:geografia}                                                     & 2          & 2         & 2         & 162       \\ \cline{2-6} 
+			& \nameref{disc:historia}                                                      & 2          & 2         & 2         & 162       \\ \cline{2-6} 
+			& \nameref{disc:fisica}                                                        & 2          & 2         & 2         & 162       \\ \cline{2-6} 
+			& \nameref{disc:quimica}                                                       & 4          & 0         & 0         & 108       \\ \cline{2-6} 
+			& \nameref{disc:biologia}                                                      & 4          & 0         & 0         & 108       \\ \cline{2-6} 
+			& \nameref{disc:filosofia}                                                     & 2          & 2         & 2         & 162       \\ \cline{2-6} 
+			& \nameref{disc:sociologia}                                                    & 2          & 2         & 2         & 162       \\ \hline
+			\multicolumn{2}{|l|}{Carga horária semanal Núcleo Básico}                      & 32         & 22        & 16        & 1890      \\ \hline
 			\multirow{7}{*}{Politécnico}   
-			& \nameref{disc:info}                                                      & 2          & 0         & 0         & 54        \\ \cline{2-6} 
-			& \nameref{disc:espanhol_libras}                                           & 0          & 2         & 0         & 54        \\ \cline{2-6} 
-			& \nameref{disc:fermentacao}                                               & 0          & 0         & 2         & 54        \\ \cline{2-6} 
-			& \nameref{disc:bioquimica}                                                & 0          & 2         & 0         & 54        \\ \cline{2-6} 
-			& \nameref{disc:microbiologia}                                             & 0          & 0         & 4         & 108       \\ \cline{2-6} 
-			& \nameref{disc:biomol}                                                    & 0          & 4         & 0         & 108       \\ \cline{2-6} 
-			& \nameref{disc:bioeticalab}                                               & 4          & 0         & 0         & 108       \\ \hline			
-			\multicolumn{2}{|l|}{Carga horária semanal dos Núcleos Básico  e Politécnico}  & 38         & 30        & 22        & 2430      \\ \hline
+			& \nameref{disc:info}                                                          & 2          & 0         & 0         & 54        \\ \cline{2-6} 
+			& \nameref{disc:espanhol_libras}                                               & 0          & 2         & 0         & 54        \\ \cline{2-6} 
+			& \nameref{disc:fermentacao}                                                   & 0          & 0         & 2         & 54        \\ \cline{2-6} 
+			& \nameref{disc:bioquimica}                                                    & 0          & 2         & 0         & 54        \\ \cline{2-6} 
+			& \nameref{disc:microbiologia}                                                 & 0          & 0         & 4         & 108       \\ \cline{2-6} 
+			& \nameref{disc:biomol}                                                        & 0          & 4         & 0         & 108       \\ \cline{2-6} 
+			& \nameref{disc:bioeticalab}                                                   & 4          & 0         & 0         & 108       \\ \cline{2-6} 		
+			& \nameref{disc:estudo}                                                        & 8          & 8         & 0         & 432       \\ \hline	
+			\multicolumn{2}{|l|}{Carga horária semanal dos Núcleos Básico  e Politécnico}  & 46         & 38        & 22        & 2862      \\ \hline
 			\multirow{7}{*}{Técnico}       
-			& \nameref{disc:biotecAnimal}                                              & 0          & 2         & 0         & 54       \\ \cline{2-6} 
-			& \nameref{disc:biotecVegetal}                                             & 0          & 2         & 0         & 54       \\ \cline{2-6} 
-			& \nameref{disc:biotecAlimentos}                                           & 0          & 0         & 4         & 108       \\ \cline{2-6} 
-			& \nameref{disc:biotecFarmacos}                                            & 0          & 0         & 4         & 108       \\ \cline{2-6} 
-			& \nameref{disc:biotecSaude}                                               & 0          & 0         & 4         & 108       \\ \cline{2-6} 
-			& \nameref{disc:producao}                                                  & 0          & 0         & 4         & 108       \\ \cline{2-6} 
-			& \nameref{disc:analitica}                                                 & 0          & 4         & 0         & 108       \\ \hline
+			& \nameref{disc:biotecAnimal}                                                  & 0          & 2         & 0         & 54        \\ \cline{2-6} 
+			& \nameref{disc:biotecVegetal}                                                 & 0          & 2         & 0         & 54        \\ \cline{2-6} 
+			& \nameref{disc:biotecAlimentos}                                               & 0          & 0         & 4         & 108       \\ \cline{2-6} 
+			& \nameref{disc:biotecFarmacos}                                                & 0          & 0         & 4         & 108       \\ \cline{2-6} 
+			& \nameref{disc:biotecSaude}                                                   & 0          & 0         & 4         & 108       \\ \cline{2-6} 
+			& \nameref{disc:producao}                                                      & 0          & 0         & 4         & 108       \\ \cline{2-6} 
+			& \nameref{disc:analitica}                                                     & 0          & 4         & 0         & 108       \\ \hline
 			\multicolumn{2}{|l|}{Carga horária semanal dos Núcleos Básico, Politécnico e Profissional} 
-			                                                                           & 38         & 38        & 38        & 3078      \\ \hline
-			\multicolumn{2}{|l|}
-			{\nameref{disc:estudo}}                                                    & 4          & 4         & 4         & 324       \\ \hline
-			\multicolumn{5}{|l|}{Estágio curricular}                                                                        & 200       \\ \hline
-			\multicolumn{5}{|l|}{Atividades complementares}                                                                 & 200       \\ \hline
-			\multicolumn{2}{|l|}{\multirow{2}{*}{Carga horária}}                       & \multicolumn{3}{l|}{Total Semanal} & Total     \\ \cline{3-6} 
-			\multicolumn{2}{|l|}{}                                                     & 42         & 42        & 42        & 3802      \\ \hline
-			\multicolumn{2}{|l|}{Número de disciplinas por ano}                        & 14         & 15        & 13        & 42        \\ \hline
+			                                                                               & 46         & 46        & 38        & 3510      \\ \hline
+			\multicolumn{5}{|l|}{Estágio curricular}                                                                            & 200       \\ \hline
+			\multicolumn{5}{|l|}{Atividades complementares}                                                                     & 200       \\ \hline
+			\multicolumn{2}{|l|}{\multirow{2}{*}{Carga horária}}                           & \multicolumn{3}{l|}{Total Semanal} & Total     \\ \cline{3-6} 
+			\multicolumn{2}{|l|}{}                                                         & 46         & 46        & 38        & 3910      \\ \hline
+			\multicolumn{2}{|l|}{Número de disciplinas por ano}                            & 14         & 15        & 13        & 42        \\ \hline
 		\end{tabular}%
 	}
 \end{table}
@@ -433,10 +433,32 @@ As disciplinas estão organizadas em séries anuais, conforme a Tabela~\ref{tab:
 \section{Metodologia de Ensino-Aprendizagem}\label{metodologia}
 \indent
 
-\todo[inline]{Descrever a abordagem de Núcleo Politécnico, e curriculo integrado...}
+O Núcleo Politécnico foi desenhado para superar problemas clássicos que permeiam as práticas pedagógicas promovendo, juntamente com os núcleos Básico e Profissional, uma formação integral com vistas à indisssociabilidade da teoria e da prática, do ensino, da pesquisa e da extensão. 
+A distribuição da carga horária nos três anos do curso é exemplificada nos diagramas das Figuras~\ref{fig:DiagramaSemanal01},~\ref{fig:DiagramaSemanal02} e~\ref{fig:DiagramaSemanal03}.
+
+\begin{figure}[!htp]
+	\includegraphics[width=\textwidth]{DiagramaSemanal01.pdf}
+	\caption{Distribuição da carga horária semanal no 1º Ano.}
+	\label{fig:DiagramaSemanal01}
+\end{figure}
+
+\begin{figure}[!htpb]
+	\includegraphics[width=\textwidth]{DiagramaSemanal02.pdf}
+	\caption{Distribuição da carga horária semanal no 2º Ano.}
+	\label{fig:DiagramaSemanal02}
+\end{figure}
+
+\begin{figure}[!htpb]
+	\includegraphics[width=\textwidth]{DiagramaSemanal03.pdf}
+	\caption{Distribuição da carga horária semanal no 3º Ano.}
+	\label{fig:DiagramaSemanal03}
+\end{figure}
 
 
 \subsection{Trabalhos Discentes}\label{trabdiscentes}
+\indent
+
+\subsubsection{Atividades Complementares}
 \indent
 
 
@@ -469,8 +491,7 @@ O Certificado será emitido pelo Instituto Federal de Educação, Ciência e Tec
 %----------------------------------------------------------------------------------------
 %------------------------------------------------
 \chapterimage{04.jpg} % Chapter heading image
-
-\chapter{Ementas}
+\chapter{Disciplinas e Ementas}
 \vspace{6em}
 \begin{flushright}
 	\textit{\textcolor{white}{Foto: Adriano Darosci}}
