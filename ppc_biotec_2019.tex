@@ -93,6 +93,12 @@
 
 \newcommand{\VER}[1]{\begingroup\color{red}#1\endgroup}
 
+\renewenvironment{quote}
+{\small\list{}{\rightmargin=.1cm \leftmargin=2.5cm}%
+	\item\relax}
+{\endlist}
+
+
 %----------------------------------------------------------------------------------------
 
 \input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
@@ -173,7 +179,7 @@
 \begin{itemize}
 	\item \textbf{Instituição Proponente:} Instituto Federal de Educação, Ciência e Tecnologia de Goiás
 	\item \textbf{Nome do curso:} Técnico Integrado em Tempo Integral em Biotecnologia
-	\item \textbf{Carga Horária do Curso:} 3802 horas
+	\item \textbf{Carga Horária do Curso:}~\VER{3500} horas
 	\item \textbf{Forma de oferta:} Presencial
 	\item \textbf{Duração:} 3 anos
 	\item \textbf{Número de Vagas:} 30 vagas anuais
@@ -248,18 +254,31 @@ Em consonância com as Bases Curriculares Nacionais, e Diretrizes para o Ensino 
 \section{Perfil do Egresso}
 \indent
 
-O Técnico em Biotecnologia executa atividades laboratoriais de biotecnologia e biociências em centros de pesquisas, indústrias e empresas no setor de saúde humana e animal, ambiental e agropecuário. 
-Opera, controla e monitora processos industriais e laboratoriais, incluindo laboratórios de saúde e ambiental. 
-Prepara materiais, meios de cultura, soluções e reagentes. 
-Analisa substâncias e materiais biológicos. 
-Cultiva \textit{in vivo} e \textit{in vitro} microrganismos, células e tecidos animais e vegetais. 
-Realiza o preparo de amostras dos tecidos animais e vegetais. 
-Extrai, replica e quantifica biomoléculas.
-Realiza a produção de imunobiológicos, vacinas, diluentes, kits de diagnóstico e bioprocessos industriais. 
-Colabora nas atividades de perícia criminal e investigação genética. 
-Desenvolve pesquisa de melhoramento genético. 
-Opera a criação e manejo de animais de experimentação. 
-Controla a qualidade e a compra de matérias-primas, insumos e produtos.
+O \textbf{Técnico em Biotecnologia} egresso do \textbf{Curso Técnico Integrado em Tempo Integral em Biotecnologia} possui, mas não limita-se, às seguintes características:
+
+\begin{itemize}
+	\item Executa, controla e monitora processos e atividades laboratoriais de biotecnologia e biociências em diversos setores indústria, meio-ambiente, agropecuária, saúde humana e animal.
+	\item Controla a qualidade e a compra de matérias-primas, insumos e produtos.
+	\item Prepara materiais, meios de cultura, soluções e reagentes.
+	\item Prepara amostras e cultiva \textit{in vivo} e \textit{in vitro} microrganismos, células e tecidos animais e vegetais.
+	\item Opera a criação e manejo de animais de experimentação.
+	\item Analisa substâncias e materiais biológicos.
+	\item Extrai, replica e quantifica biomoléculas.
+	\item Realiza a produção de imunobiológicos, vacinas, diluentes, kits de diagnóstico e bioprocessos industriais.
+	\item Colabora nas atividades de perícia criminal e investigação genética. 
+	\item Desenvolve pesquisa em biotecnologia.
+	\item Compreende e domina os fundamentos científico-tecnológicos do seu trabalho.
+	\item Respeita as diversidades e os direitos humanos e tem atitude ética no trabalho e fora dele.
+	\item Compreende e tem senso críticos frente aos projetos políticos de desenvolvimento nacional.
+	\item Tem compromisso com a democracia e a responsabilidade social e ambiental.
+	\item Cumpre da legislação ambiental.
+	\item Avalia tendências no desenvolvimento da ciência e da tecnologia.
+	\item Compreende a importância e impacto do seu trabalho.
+	\item Usa a linguagem para a cidadania e profissão.
+	\item Trabalha em equipe e conhece planejamento estratégico, iniciativa e liderança.
+	\item Atualiza-se mantendo-se criativo e responsável.
+\end{itemize}
+
 
 \subsection{Campo de atuação}
 \indent
@@ -355,15 +374,14 @@ Desta forma, o Curso Técnico Integrado ao Ensino Médio em Biotecnologia, em co
 \subsection{Duração e Carga Horária}
 \indent
 
-O Curso tem duração total de~\VER{3910} horas distribuídas em três anos.
+O Curso tem duração total de~\VER{3500} horas distribuídas em três anos.
 A carga horária total está assim distruída:
 \begin{itemize}
-	\item \VER{3078} horas de disciplinas com ementas categóricas
-	\item \VER{432} horas de disciplinas com ementas flexíveis
+	\item \VER{3186} horas de disciplinas
 	\item \VER{200} horas de estágio curricular
-	\item \VER{200} horas de atividades complementares
+	\item \VER{114} horas de atividades complementares
 \end{itemize}
-, sendo \VER{3402} horas de disciplinas e \VER{200} horas de estágio curricular supervisionado e \VER{200} horas de atividades complementares.
+
 A duração mínima é de 3 (três) anos e o prazo máximo de integralização dos cursos da educação profissional técnica de nível médio integrado ao ensino médio é do dobro do tempo da sua duração. 
 Logo, o máximo será de 6 (seis) anos, em conformidade com a legislação vigente. 
 Após o prazo previsto por lei o aluno terá que se submeter a novo processo seletivo, caso deseje concluí-lo.
@@ -387,45 +405,47 @@ As disciplinas estão organizadas em séries anuais, conforme a Tabela~\ref{tab:
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|l|l|l|}
 			\hline
-			Núcleo                                                                         & Disciplinas                                      & 1º Ano     & 2º Ano    & 3º Ano    & CH Totais \\ \hline
-			\multirow{12}{*}{Básico}& \nameref{disc:artes}                                 & 2          & 2         & 0         & 108       \\ \cline{2-6} 
-			& \nameref{disc:ingles}                                                        & 4          & 0         & 0         & 108       \\ \cline{2-6} 
+			Núcleo                     & Disciplinas                                       & 1º Ano     & 2º Ano    & 3º Ano    & CH Totais \\ \hline
+			\multirow{12}{*}{Básico}
+			& \nameref{disc:artes}                                                         & 2          & 2         & 0         & 108       \\ \cline{2-6} 
 			& \nameref{disc:educacaofisica}                                                & 2          & 2         & 0         & 108       \\ \cline{2-6} 
-			& \nameref{disc:linguaportuguesa}                                              & 4          & 4         & 4         & 324       \\ \cline{2-6} 
+			& \nameref{disc:ingles}                                                        & 2          & 2         & 0         & 108       \\ \cline{2-6} 
+			& \nameref{disc:espanhol_libras}                                               & 0          & 0         & 2         & 54        \\ \cline{2-6} 			 
+			& \nameref{disc:linguaportuguesa}                                              & 4          & 4         & 4         & 324       \\ \cline{2-6}
 			& \nameref{disc:matematica}                                                    & 2          & 4         & 2         & 216       \\ \cline{2-6} 
 			& \nameref{disc:geografia}                                                     & 2          & 2         & 2         & 162       \\ \cline{2-6} 
 			& \nameref{disc:historia}                                                      & 2          & 2         & 2         & 162       \\ \cline{2-6} 
 			& \nameref{disc:fisica}                                                        & 2          & 2         & 2         & 162       \\ \cline{2-6} 
-			& \nameref{disc:quimica}                                                       & 4          & 0         & 0         & 108       \\ \cline{2-6} 
-			& \nameref{disc:biologia}                                                      & 4          & 0         & 0         & 108       \\ \cline{2-6} 
 			& \nameref{disc:filosofia}                                                     & 2          & 2         & 2         & 162       \\ \cline{2-6} 
 			& \nameref{disc:sociologia}                                                    & 2          & 2         & 2         & 162       \\ \hline
-			\multicolumn{2}{|l|}{Carga horária semanal Núcleo Básico}                      & 32         & 22        & 16        & 1890      \\ \hline
+			\multicolumn{2}{|l|}{Carga horária semanal Núcleo Básico}                      & 22         & 24        & 16        & 1890      \\ \hline
 			\multirow{7}{*}{Politécnico}   
-			& \nameref{disc:info}                                                          & 2          & 0         & 0         & 54        \\ \cline{2-6} 
-			& \nameref{disc:espanhol_libras}                                               & 0          & 2         & 0         & 54        \\ \cline{2-6} 
-			& \nameref{disc:fermentacao}                                                   & 0          & 0         & 2         & 54        \\ \cline{2-6} 
+			& \nameref{disc:quimica}                                                       & 4          & 0         & 0         & 108       \\ \cline{2-6} 
+			& \nameref{disc:biologia}                                                      & 4          & 0         & 0         & 108       \\ \cline{2-6} 	
 			& \nameref{disc:bioquimica}                                                    & 0          & 2         & 0         & 54        \\ \cline{2-6} 
-			& \nameref{disc:microbiologia}                                                 & 0          & 0         & 4         & 108       \\ \cline{2-6} 
-			& \nameref{disc:biomol}                                                        & 0          & 4         & 0         & 108       \\ \cline{2-6} 
-			& \nameref{disc:bioeticalab}                                                   & 4          & 0         & 0         & 108       \\ \cline{2-6} 		
-			& \nameref{disc:estudo}                                                        & 8          & 8         & 0         & 432       \\ \hline	
-			\multicolumn{2}{|l|}{Carga horária semanal dos Núcleos Básico  e Politécnico}  & 46         & 38        & 22        & 2862      \\ \hline
+			& \nameref{disc:biomol}                                                        & 0          & 4         & 0         & 108        \\ \cline{2-6} 
+			& \nameref{disc:bioetica}                                                      & 2          & 0         & 0         & 54        \\ \cline{2-6} 		
+			& \nameref{disc:bioseg}                                                        & 2          & 0         & 0         & 54        \\ \cline{2-6} 		
+			& \nameref{disc:info}                                                          & 2          & 0         & 0         & 54        \\ \cline{2-6} 
+			& \nameref{disc:estudo}                                                        & 4          & 4         & 0         & 216       \\ \hline	
+			\multicolumn{2}{|l|}{Carga horária semanal dos Núcleos Básico  e Politécnico}  & 40         & 34        & 16        & 2862      \\ \hline
 			\multirow{7}{*}{Técnico}       
 			& \nameref{disc:biotecAnimal}                                                  & 0          & 2         & 0         & 54        \\ \cline{2-6} 
 			& \nameref{disc:biotecVegetal}                                                 & 0          & 2         & 0         & 54        \\ \cline{2-6} 
 			& \nameref{disc:biotecAlimentos}                                               & 0          & 0         & 4         & 108       \\ \cline{2-6} 
-			& \nameref{disc:biotecFarmacos}                                                & 0          & 0         & 4         & 108       \\ \cline{2-6} 
+			& \nameref{disc:biotecFarmacos}                                                & 0          & 0         & 2         & 54        \\ \cline{2-6} 
 			& \nameref{disc:biotecSaude}                                                   & 0          & 0         & 4         & 108       \\ \cline{2-6} 
+			& \nameref{disc:microbiologia}                                                 & 0          & 0         & 4         & 108       \\ \cline{2-6}
+			& \nameref{disc:fermentacao}                                                   & 0          & 0         & 2         & 54        \\ \cline{2-6} 			
 			& \nameref{disc:producao}                                                      & 0          & 0         & 4         & 108       \\ \cline{2-6} 
 			& \nameref{disc:analitica}                                                     & 0          & 4         & 0         & 108       \\ \hline
 			\multicolumn{2}{|l|}{Carga horária semanal dos Núcleos Básico, Politécnico e Profissional} 
-			                                                                               & 46         & 46        & 38        & 3510      \\ \hline
+			                                                                               & 40         & 42        & 36        & 3186      \\ \hline
 			\multicolumn{5}{|l|}{Estágio curricular}                                                                            & 200       \\ \hline
-			\multicolumn{5}{|l|}{Atividades complementares}                                                                     & 200       \\ \hline
+			\multicolumn{5}{|l|}{Atividades complementares}                                                                     & 114       \\ \hline
 			\multicolumn{2}{|l|}{\multirow{2}{*}{Carga horária}}                           & \multicolumn{3}{l|}{Total Semanal} & Total     \\ \cline{3-6} 
-			\multicolumn{2}{|l|}{}                                                         & 46         & 46        & 38        & 3910      \\ \hline
-			\multicolumn{2}{|l|}{Número de disciplinas por ano}                            & 14         & 15        & 13        & 42        \\ \hline
+			\multicolumn{2}{|l|}{}                                                         & 40         & 42        & 36        & 3500      \\ \hline
+			\multicolumn{2}{|l|}{Número de disciplinas por ano}                            & 16         & 16        & 13        & 45        \\ \hline
 		\end{tabular}%
 	}
 \end{table}
@@ -437,20 +457,20 @@ O Núcleo Politécnico foi desenhado para superar problemas clássicos que perme
 A distribuição da carga horária nos três anos do curso é exemplificada nos diagramas das Figuras~\ref{fig:DiagramaSemanal01},~\ref{fig:DiagramaSemanal02} e~\ref{fig:DiagramaSemanal03}.
 
 \begin{figure}[!htp]
-	\includegraphics[width=\textwidth]{DiagramaSemanal01.pdf}
-	\caption{Distribuição da carga horária semanal no 1º Ano.}
+	\includegraphics[width=\textwidth]{DiagramaSemanal01.jpg}
+	\caption{Exemplo de distribuição da carga horária semanal no 1º Ano.}
 	\label{fig:DiagramaSemanal01}
 \end{figure}
 
 \begin{figure}[!htpb]
-	\includegraphics[width=\textwidth]{DiagramaSemanal02.pdf}
-	\caption{Distribuição da carga horária semanal no 2º Ano.}
+	\includegraphics[width=\textwidth]{DiagramaSemanal02.jpg}
+	\caption{Exemplo de distribuição da carga horária semanal no 2º Ano.}
 	\label{fig:DiagramaSemanal02}
 \end{figure}
 
 \begin{figure}[!htpb]
-	\includegraphics[width=\textwidth]{DiagramaSemanal03.pdf}
-	\caption{Distribuição da carga horária semanal no 3º Ano.}
+	\includegraphics[width=\textwidth]{DiagramaSemanal03.jpg}
+	\caption{Exemplo de distribuição da carga horária semanal no 3º Ano.}
 	\label{fig:DiagramaSemanal03}
 \end{figure}
 
@@ -536,32 +556,7 @@ As disciplinas aqui dispostas, visam viabilizar o acesso dos estudantes às base
 		\item 
 	\end{enumerate}	
 \end{itemize}
-
-\newpage
-\subsection{Língua estrangeira - Inglês}\label{disc:ingles}
-\begin{itemize}
-	\item \textbf{Carga horária (hora/aula):} 108
-	\item \textbf{Docente Responsável:}
-	\item \textbf{Conceitos-Chave:}
-	\begin{itemize}
-		\item NNNNN
-		\item NNNNN
-	\end{itemize}
-	\item \textbf{Ementa 1º Ano:} 
-	Leitura, compreensão e interpretação de textos orais e escritos, estabelecendo relações entre língua, cultura e sociedade;
-	Estudo de elementos morfossintáticos, semânticos e fonológicos da língua inglesa;
-	Desenvolvimento das habilidades comunicativas com ênfase na leitura;
-	Leitura, compreensão e interpretação de textos escritos, ligados à área de conhecimento do curso;
-	\item \textbf{Bibliografia básica}
-	\begin{enumerate}
-		\item NNNNN
-	\end{enumerate}
-	\item \textbf{Bibliografia complementar}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}	
-\end{itemize}
-
+\nameref{tab:matriz}
 
 \newpage
 \subsection{Educação física}\label{disc:educacaofisica}
@@ -576,7 +571,7 @@ As disciplinas aqui dispostas, visam viabilizar o acesso dos estudantes às base
 	\item \textbf{Ementa 1º Ano:} 
 	Introdução ao estudo, vivência e reflexão crítica dos temas da cultura corporal de movimento, abordados pela Educação Física;
 	Compreensão dos aspectos biológicos, históricos, psicológicos, sociais, filosóficos e culturais, e suas relações com o meio ambiente e a diversidade humana, em uma perspectiva omnilateral;
-
+	
 	\item \textbf{Ementa 2º Ano:} 
 	Aprofundamento e ampliação do estudo, vivência e reflexão crítica dos temas da cultura corporal de movimento, abordados pela Educação Física;
 	Educação Física e suas relações com o mundo do trabalho, a saúde e o lazer;	
@@ -589,7 +584,65 @@ As disciplinas aqui dispostas, visam viabilizar o acesso dos estudantes às base
 		\item 
 	\end{enumerate}	
 \end{itemize}
+\nameref{tab:matriz}
 
+\newpage
+\subsection{Língua estrangeira - Inglês}\label{disc:ingles}
+\begin{itemize}
+	\item \textbf{Carga horária (hora/aula):} 108
+	\item \textbf{Docente Responsável:}
+	\item \textbf{Conceitos-Chave:}
+	\begin{itemize}
+		\item Interpretação de textos técnicos
+		\item NNNNN
+	\end{itemize}
+	\item \textbf{Ementa 1º Ano:} 
+	Leitura, compreensão e interpretação de textos orais e escritos, estabelecendo relações entre língua, cultura e sociedade;
+	Estudo de elementos morfossintáticos, semânticos e fonológicos da língua inglesa;
+	Desenvolvimento das habilidades comunicativas com ênfase na leitura;
+	Leitura, compreensão e interpretação de textos escritos, ligados à área de conhecimento do curso;
+	\item \textbf{Ementa 2º Ano:} 
+	Leitura, compreensão e interpretação de textos orais e escritos, estabelecendo relações entre língua, cultura e sociedade;
+	Estudo de elementos morfossintáticos, semânticos e fonológicos da língua inglesa;
+	Desenvolvimento das habilidades comunicativas com ênfase na leitura;
+	Leitura, compreensão e interpretação de textos escritos, ligados à área de conhecimento do curso;	
+	\item \textbf{Bibliografia básica}
+	\begin{enumerate}
+		\item NNNNN
+	\end{enumerate}
+	\item \textbf{Bibliografia complementar}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}	
+\end{itemize}
+\nameref{tab:matriz}
+
+\newpage
+\subsection{Língua opcional – Espanhol ou LIBRAS}\label{disc:espanhol_libras}
+\begin{itemize}
+	\item \textbf{Carga horária (hora/aula):} 54
+	\item \textbf{Docente Responsável:}
+	\item \textbf{Conceitos-Chave:}
+	\begin{itemize}
+		\item Interpretação de textos técnicos
+		\item NNNNN
+	\end{itemize}
+	\item \textbf{Ementa:} 
+	Estruturas básicas da Língua Espanhola em uma abordagem contrastiva com a Língua Portuguesa em seus aspectos lexicais, sintáticos, semânticos, pragmáticos, discursivos e interculturais; 
+	Habilidades comunicativas de recepção e produção em vários gêneros textuais a partir das especificidades de cada curso;
+	Aspectos histórico-culturais do surdo. Noções básicas da gramática da Língua Brasileira de Sinais (LIBRAS);
+	Vocabulário básico da LIBRAS;
+	Práticas de conversação em LIBRAS;		
+	\item \textbf{Bibliografia básica}
+	\begin{enumerate}
+		\item NNNNN
+	\end{enumerate}
+	\item \textbf{Bibliografia complementar}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}	
+\end{itemize}
+\nameref{tab:matriz}
 
 \newpage
 \subsection{Língua portuguesa, leitura e produção de textos}\label{disc:linguaportuguesa}
@@ -598,8 +651,8 @@ As disciplinas aqui dispostas, visam viabilizar o acesso dos estudantes às base
 	\item \textbf{Docente Responsável:}
 	\item \textbf{Conceitos-Chave:}
 	\begin{itemize}
-		\item NNNNN
-		\item NNNNN
+		\item Interpretação de textos técnicos
+		\item Redação de textos técnicos
 	\end{itemize}
 	\item \textbf{Ementa 1º Ano:} 
 	Práticas de leitura, compreensão, interpretação e produção de textos de diversos gêneros textuais
@@ -628,7 +681,7 @@ As disciplinas aqui dispostas, visam viabilizar o acesso dos estudantes às base
 		\item 
 	\end{enumerate}	
 \end{itemize}
-
+\nameref{tab:matriz}
 
 \newpage
 \subsection{Matemática e estatística}\label{disc:matematica}
@@ -671,7 +724,7 @@ As disciplinas aqui dispostas, visam viabilizar o acesso dos estudantes às base
 		\item 
 	\end{enumerate}	
 \end{itemize}
-
+\nameref{tab:matriz}
 
 \newpage
 \subsection{Geografia}\label{disc:geografia}
@@ -711,7 +764,7 @@ As disciplinas aqui dispostas, visam viabilizar o acesso dos estudantes às base
 		\item 
 	\end{enumerate}	
 \end{itemize}
-
+\nameref{tab:matriz}
 
 \newpage
 \subsection{História}\label{disc:historia}
@@ -747,12 +800,12 @@ As disciplinas aqui dispostas, visam viabilizar o acesso dos estudantes às base
 		\item 
 	\end{enumerate}	
 \end{itemize}
-
+\nameref{tab:matriz}
 
 \newpage
 \subsection{Física}\label{disc:fisica}
 \begin{itemize}
-	\item \textbf{Carga horária (hora/aula):} 162
+	\item \textbf{Carga horária (hora/aula):} 108
 	\item \textbf{Docente Responsável:}
 	\item \textbf{Conceitos-Chave:}
 	\begin{itemize}
@@ -776,77 +829,9 @@ As disciplinas aqui dispostas, visam viabilizar o acesso dos estudantes às base
 		\item 
 	\end{enumerate}	
 \end{itemize}
+\nameref{tab:matriz}
 
 
-\newpage
-\subsection{Química}\label{disc:quimica}
-\begin{itemize}
-	\item \textbf{Carga horária (hora/aula):} 108
-	\item \textbf{Docente Responsável:}
-	\item \textbf{Conceitos-Chave:}
-	\begin{itemize}
-		\item NNNNN
-		\item NNNNN
-	\end{itemize}
-	\item \textbf{Ementa 1º Semestre:} 
-	%Leis ponderais;
-	Matéria, energia, transformações, substâncias;
-	Modelos e estrutura atômica;
-	Tabela periódica;
-	Ligações e interações químicas;
-	Funções inorgânicas;
-	Reações químicas;
-	\item \textbf{Ementa 2º Semestre:} 	
-	Noções de radioatividade;
-	Equilíbrio em meio homogêneo (Ácido - Base): teoria ácido-base (segundo Arhenius, Brönsted e Lewis);
-	Equilíbrio químico;
-	Introdução à química orgânica;
-	Funções orgânicas: hidrocarbonetos, oxigenadas e nitrogenadas, e suas principais reações; 
-	Isomeria;
-	%Parte de fisico-quimica ficou junto com quimica analitica
-	\item \textbf{Bibliografia básica}
-	\begin{enumerate}
-		\item NNNNN
-	\end{enumerate}
-	\item \textbf{Bibliografia complementar}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}	
-\end{itemize}
-
-
-\newpage
-\subsection{Biologia}\label{disc:biologia}
-\begin{itemize}
-	\item \textbf{Carga horária (hora/aula):} 108
-	\item \textbf{Docente Responsável:}
-	\item \textbf{Conceitos-Chave:}
-	\begin{itemize}
-		\item NNNNN
-		\item NNNNN
-	\end{itemize}
-	\item \textbf{Ementa 1º Semestre:} 
-	Seres vivos: Classificação, organização e importância econômica e ambiental;
-	Ciclos Biogeoquímicos; 
-	Célula: teoria, padrões e componentes; 
-	Divisão celular;
-	Morfologia e fisiologia humana;
-	
-	\item \textbf{Ementa 2º Semestre:} 
-	Origem da vida; 
-	Teorias e mecanismos evolutivos;
-	Ecologia: Conceitos básicos, ecologia de população, comunidades e ecossistemas; 
-	Poluição e sustentabilidade;
-	
-	\item \textbf{Bibliografia básica}
-	\begin{enumerate}
-		\item NNNNN
-	\end{enumerate}
-	\item \textbf{Bibliografia complementar}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}	
-\end{itemize}
 
 \newpage
 \subsection{Filosofia}\label{disc:filosofia}
@@ -879,7 +864,7 @@ As disciplinas aqui dispostas, visam viabilizar o acesso dos estudantes às base
 		\item 
 	\end{enumerate}	
 \end{itemize}
-
+\nameref{tab:matriz}
 
 \newpage
 \subsection{Sociologia}\label{disc:sociologia}
@@ -921,7 +906,7 @@ As disciplinas aqui dispostas, visam viabilizar o acesso dos estudantes às base
 		\item 
 	\end{enumerate}	
 \end{itemize}
-
+\nameref{tab:matriz}
 
 \newpage
 \section{Ementas do Núcleo Politécnico}\label{ementasPolitecnico}
@@ -929,104 +914,10 @@ As disciplinas aqui dispostas, visam viabilizar o acesso dos estudantes às base
 
 O núcleo politécnico compreende os fundamentos científicos, sociais, organizacionais, econômicos, políticos, culturais, ambientais, estéticos e éticos que alicerçam as tecnologias e a contextualização do mesmo no sistema de produção social de forma aderenta ao eixo tecnológico em que se situa o curso~\cite{Resolucao06De2012}.
 
-\newpage
-\subsection{Inovação e Tecnlogia da Informação}\label{disc:info}
-\begin{itemize}
-	\item \textbf{Carga horária (hora/aula):} 54
-	\item \textbf{Docente Responsável:}
-	\item \textbf{Conceitos-Chave:}
-	\begin{itemize}
-		\item Tecnologia da informação
-		\item Metodologia científica
-		\item Propriedade intelectual
-		\item Gestão
-		\item Inovação
-		\item Empreendedorismo
-	\end{itemize}
-	\item \textbf{Ementa:} 
-	Uso da Internet e Noções de segurança da informação;
-	Produção de textos usando software;
-	Produção de planilha usando software;
-	Produção de apresentações usando software;
-	Elaboração de projetos de pesquisa; 
-	Estrutura do trabalho científico;
-	Propriedade intelectual: conceitos e modalidades;
-	Gestão da propriedade intelectual;
-	Gestão da inovação e transferência de tecnologia;
-	Prospecção tecnológica;
-	Noções de empreendedorismo;
-	\item \textbf{Bibliografia básica}
-	\begin{enumerate}
-		\item NNNNN
-	\end{enumerate}
-	\item \textbf{Bibliografia complementar}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}	
-\end{itemize}
-
-\newpage
-\subsection{Língua opcional – Espanhol ou LIBRAS}\label{disc:espanhol_libras}
-\begin{itemize}
-	\item \textbf{Carga horária (hora/aula):} 54
-	\item \textbf{Docente Responsável:}
-	\item \textbf{Conceitos-Chave:}
-	\begin{itemize}
-		\item NNNNN
-		\item NNNNN
-	\end{itemize}
-	\item \textbf{Ementa:} 
-	Estruturas básicas da Língua Espanhola em uma abordagem contrastiva com a Língua Portuguesa em seus aspectos lexicais, sintáticos, semânticos, pragmáticos, discursivos e interculturais; 
-	Habilidades comunicativas de recepção e produção em vários gêneros textuais a partir das especificidades de cada curso;
-	Aspectos histórico-culturais do surdo. Noções básicas da gramática da Língua Brasileira de Sinais (LIBRAS);
-	Vocabulário básico da LIBRAS;
-	Práticas de conversação em LIBRAS;		
-	\item \textbf{Bibliografia básica}
-	\begin{enumerate}
-		\item NNNNN
-	\end{enumerate}
-	\item \textbf{Bibliografia complementar}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}	
-\end{itemize}
 
 
 \newpage
-\subsection{Fermentação}\label{disc:fermentacao}
-\begin{itemize}
-	\item \textbf{Carga horária (hora/aula):} 54
-	\item \textbf{Docente Responsável:}
-	\item \textbf{Conceitos-Chave:}
-	\begin{itemize}
-		\item NNNNN
-		\item NNNNN
-	\end{itemize}
-	\item \textbf{Ementa:} 
-	Fermentação industriais;
-	Conceituação de processo fermentativo; 
-	Microrganismos para utilização industrial; 
-	Matérias primas e meios de fermentação para utilização industrial; 
-	Principais etapas de um processo fermentativo; 
-	Classificação dos processos fermentativos quanto ao desenvolvimento do agente, regime de condução do processo e necessidade de oxigênio;
-	Produtos do metabolismo microbiano de interesse na indústria farmacêutica, de alimentos e afins; 
-	Enzimologia industrial; 
-	Cinética de crescimento microbiano;
-	Esterilização de equipamentos, meios e ar;
-	Biorreatores;
-	Bioprocessos.;
-	\item \textbf{Bibliografia básica}
-	\begin{enumerate}
-		\item NNNNN
-	\end{enumerate}
-	\item \textbf{Bibliografia complementar}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}	
-\end{itemize}
-
-\newpage
-\subsection{Bioquímica}\label{disc:bioquimica}
+\subsection{Química}\label{disc:quimica}
 \begin{itemize}
 	\item \textbf{Carga horária (hora/aula):} 108
 	\item \textbf{Docente Responsável:}
@@ -1035,10 +926,90 @@ O núcleo politécnico compreende os fundamentos científicos, sociais, organiza
 		\item NNNNN
 		\item NNNNN
 	\end{itemize}
-	\item \textbf{Ementa:} 
+	\item \textbf{Ementa 1º Ano:}
+	\begin{itemize}	
+		\item \textbf{Ementa 1º Semestre:} 
+		%Leis ponderais;
+		Matéria, energia, transformações, substâncias;
+		Modelos e estrutura atômica;
+		Tabela periódica;
+		Ligações e interações químicas;
+		Funções inorgânicas;
+		Reações químicas;
+		
+		\item \textbf{Ementa 2º Semestre:} 	
+		Noções de radioatividade;
+		Equilíbrio em meio homogêneo (Ácido - Base): teoria ácido-base (segundo Arhenius, Brönsted e Lewis);
+		Equilíbrio químico;
+		Introdução à química orgânica;
+		Funções orgânicas: hidrocarbonetos, oxigenadas e nitrogenadas, e suas principais reações; 
+		Isomeria;
+	\end{itemize}
+	%Parte de fisico-quimica ficou junto com quimica analitica
+	\item \textbf{Bibliografia básica}
+	\begin{enumerate}
+		\item NNNNN
+	\end{enumerate}
+	\item \textbf{Bibliografia complementar}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}	
+\end{itemize}
+\nameref{tab:matriz}
+
+\newpage
+\subsection{Biologia}\label{disc:biologia}
+\begin{itemize}
+	\item \textbf{Carga horária (hora/aula):} 108
+	\item \textbf{Docente Responsável:}
+	\item \textbf{Conceitos-Chave:}
+	\begin{itemize}
+		\item NNNNN
+		\item NNNNN
+	\end{itemize}
+	\item \textbf{Ementa 1º Ano:}
+	\begin{itemize}
+		\item \textbf{Ementa 1º Semestre:} 
+		Seres vivos: Classificação, organização e importância econômica e ambiental;
+		Ciclos Biogeoquímicos; 
+		Célula: teoria, padrões e componentes; 
+		Divisão celular;
+		Morfologia e fisiologia humana;
+		
+		\item \textbf{Ementa 2º Semestre:} 
+		Origem da vida; 
+		Teorias e mecanismos evolutivos;
+		Ecologia: Conceitos básicos, ecologia de população, comunidades e ecossistemas; 
+		Poluição e sustentabilidade;
+		\end{itemize}
+	\item \textbf{Bibliografia básica}
+	\begin{enumerate}
+		\item NNNNN
+	\end{enumerate}
+	\item \textbf{Bibliografia complementar}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}	
+\end{itemize}
+\nameref{tab:matriz}
+
+
+
+\newpage
+\subsection{Bioquímica}\label{disc:bioquimica}
+\begin{itemize}
+	\item \textbf{Carga horária (hora/aula):} 54
+	\item \textbf{Docente Responsável:}
+	\item \textbf{Conceitos-Chave:}
+	\begin{itemize}
+		\item NNNNN
+		\item NNNNN
+	\end{itemize}
+	\item \textbf{Ementa 1º semestre:}
 	Introdução à Bioquímica; 
 	Biomoléculas e nutrientes;
 	Reações de biossíntese e degradação;
+	\item \textbf{Ementa 2º semestre:}	
 	Metabolismo e aplicações de carboidratos, lipídios e proteínas;
 	Seminários de bioquímica;
 	\item \textbf{Bibliografia básica}
@@ -1050,9 +1021,11 @@ O núcleo politécnico compreende os fundamentos científicos, sociais, organiza
 		\item 
 	\end{enumerate}	
 \end{itemize}
+\nameref{tab:matriz}
+
 
 \newpage
-\subsection{Microbiologia}\label{disc:microbiologia}
+\subsection{Biologia Molecular e genética}\label{disc:biomol}
 \begin{itemize}
 	\item \textbf{Carga horária (hora/aula):} 108
 	\item \textbf{Docente Responsável:}
@@ -1061,35 +1034,8 @@ O núcleo politécnico compreende os fundamentos científicos, sociais, organiza
 		\item NNNNN
 		\item NNNNN
 	\end{itemize}
-	\item \textbf{Ementa:}
-    Introdução e histórico da microbiologia; 
-	Microrganismos: classificação, citologia, morfologia, metabolismo, crescimento, controle do crescimento, genética e técnicas microbiológicas;
-	Microbiologia industrial; 
-	Principais microrganismos e bioprodutos industriais: produção, melhoramento e características gerais;
-	
-	\item \textbf{Bibliografia básica}
-	\begin{enumerate}
-		\item NNNNN
-	\end{enumerate}
-	\item \textbf{Bibliografia complementar}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}	
-\end{itemize}
-
-\newpage
-\subsection{Biologia Molecular e Bioinformática}\label{disc:biomol}
-\begin{itemize}
-	\item \textbf{Carga horária (hora/aula):} 108
-	\item \textbf{Docente Responsável:}
-	\item \textbf{Conceitos-Chave:}
-	\begin{itemize}
-		\item NNNNN
-		\item NNNNN
-	\end{itemize}
-
 	\item \textbf{Ementa 1º semestre:}
-    Dogma central da Biologia Molecular e o fluxo da informação genética;
+	Dogma central da Biologia Molecular e o fluxo da informação genética;
 	Estrutura, propriedades e características de ácidos nucléicos (DNA e RNA);
 	Código genético; 
 	Replicação e transcrição e tradução em procariotos e eucariotos;
@@ -1101,14 +1047,15 @@ O núcleo politécnico compreende os fundamentos científicos, sociais, organiza
 	Técnicas básicas de manipulação genética;
 	
 	\item \textbf{Ementa 2º semestre:}	
-	Genômica;
-	Transcritômica;
-	Metabolômica;
-	Bioinformática básica;
-	Noções de programação de computadores;
-	Bancos de dados biológicas;
-	Montagem e anotação de genomas;
-	Análises de RNA-Seq;	
+	
+	Introdução à Genética;
+	Probabilidade e teste de proporções genéticas; 
+	Mendelismo: os princípios básicos da herança; 
+	Extensões do mendelismo; 
+	Genes ligados ao sexo em seres humanos;
+	Genética quantitativa: modelos para cor da pele humana e discussão das questões étnico-raciais à luz da genética moderna;
+	Variação no número e estrutura dos cromossomos;
+	
 	\item \textbf{Bibliografia básica}
 	\begin{enumerate}
 		\item NNNNN
@@ -1118,44 +1065,12 @@ O núcleo politécnico compreende os fundamentos científicos, sociais, organiza
 		\item 
 	\end{enumerate}	
 \end{itemize}
-
-
-
-%\newpage
-%\subsection{Bioética}\label{disc:bioetica}
-%\begin{itemize}
-%	\item \textbf{Carga horária (hora/aula):} 108
-%	\item \textbf{Docente Responsável:}
-%	\item \textbf{Conceitos-Chave:}
-%	\begin{itemize}
-%		\item NNNNN
-%		\item NNNNN
-%	\end{itemize}
-%	\item \textbf{Ementa:} 
-%	Abordagem da ética filosófica à ética aplicada em saúde; princípios e teorias da bioética;
-%	Produção de conhecimento e o exercício profissional em biotecnologia; 
-%	Papel e limites das ciências e do cientista; 
-%	Discussão de questões teóricas voltadas a questões da bioética constitutivas dos campos das relações emergentes e das relações persistentes de nossa sociedade; 
-%	Bioética e a saúde pública, eutanásia e distanásia, segurança alimentar; 
-%	Transgênicos; 
-%	Especismo; 
-%	tecnologias de ponta, bioterrorismo; 
-%	Aborto;
-%	\item \textbf{Bibliografia básica}
-%	\begin{enumerate}
-%		\item NNNNN
-%	\end{enumerate}
-%	\item \textbf{Bibliografia complementar}
-%	\begin{enumerate}
-%		\item 
-%	\end{enumerate}	
-%\end{itemize}
-
+\nameref{tab:matriz}
 
 \newpage
-\subsection{Bioética, biossegurança e fundamentos de laboratório}\label{disc:bioeticalab}
+\subsection{Bioética}\label{disc:bioetica}
 \begin{itemize}
-	\item \textbf{Carga horária (hora/aula):} 108
+	\item \textbf{Carga horária (hora/aula):} 54
 	\item \textbf{Docente Responsável:}
 	\item \textbf{Conceitos-Chave:}
 	\begin{itemize}
@@ -1168,16 +1083,39 @@ O núcleo politécnico compreende os fundamentos científicos, sociais, organiza
 	Produção de conhecimento e o exercício profissional em biotecnologia; 
 	Papel e limites das ciências e do cientista; 
 	Discussão de questões teóricas voltadas a questões da bioética constitutivas dos campos das relações emergentes e das relações persistentes de nossa sociedade; 
+	\item \textbf{Ementa 2º Semestre:} 
 	Bioética e a saúde pública, eutanásia e distanásia, segurança alimentar; 
 	Transgênicos; 
 	Especismo; 
 	Tecnologias de ponta, bioterrorismo; 
 	Aborto;
 	Direitos humanos;
-	\item \textbf{Ementa 2º Semestre:} 
+	\item \textbf{Bibliografia básica}
+	\begin{enumerate}
+		\item NNNNN
+	\end{enumerate}
+	\item \textbf{Bibliografia complementar}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}	
+\end{itemize}
+\nameref{tab:matriz}
+
+\newpage
+\subsection{Biossegurança e fundamentos de laboratório}\label{disc:bioseg}
+\begin{itemize}
+	\item \textbf{Carga horária (hora/aula):} 54
+	\item \textbf{Docente Responsável:}
+	\item \textbf{Conceitos-Chave:}
+	\begin{itemize}
+		\item NNNNN
+		\item NNNNN
+	\end{itemize}
+	\item \textbf{Ementa 1º Semestre:} 
 	Conceito de Biossegurança e importância; 
 	Legislação, normas e medidas de biossegurança nas atividades desenvolvidas pelos profissionais de biotecnologia; 
 	Riscos químicos, físicos e biológicos; 
+	\item \textbf{Ementa 2º Semestre:} 
 	Condutas de segurança e saúde no trabalho; 
 	Transporte e descarte dos resíduos de serviço de saúde e relação com o meio ambiente;
 	\item \textbf{Bibliografia básica}
@@ -1189,7 +1127,92 @@ O núcleo politécnico compreende os fundamentos científicos, sociais, organiza
 		\item 
 	\end{enumerate}	
 \end{itemize}
+\nameref{tab:matriz}
 
+\newpage
+\subsection{Inovação e tecnlogia da informação aplicada}\label{disc:info}
+\begin{itemize}
+	\item \textbf{Carga horária (hora/aula):} 54
+	\item \textbf{Docente Responsável:}
+	\item \textbf{Conceitos-Chave:}
+	\begin{itemize}
+		\item Tecnologia da informação
+		\item Metodologia científica
+		\item Propriedade intelectual
+		\item Gestão
+		\item Inovação
+		\item Empreendedorismo
+		\item Redação de textos técnicos
+	\end{itemize}
+
+	\item \textbf{Ementa 1º semestre:}		
+	Uso da Internet e Noções de segurança da informação;
+	Produção de textos usando software;
+	Produção de planilha usando software;
+	Produção de apresentações usando software;
+	Elaboração de projetos de pesquisa; 
+	Estrutura do trabalho científico;
+	Propriedade intelectual: conceitos e modalidades;
+	Gestão da propriedade intelectual;
+	Gestão da inovação e transferência de tecnologia;
+	Prospecção tecnológica;
+	Noções de empreendedorismo;
+	\item \textbf{Ementa 2º semestre:}		
+	Genômica;
+	Transcritômica;
+	Metabolômica;
+	Bioinformática básica;
+	Noções de programação de computadores;
+	Bancos de dados biológicas;
+	Montagem e anotação de genomas;
+	Análises de RNA-Seq;	
+	
+	\item \textbf{Bibliografia básica}
+	\begin{enumerate}
+		\item NNNNN
+	\end{enumerate}
+	\item \textbf{Bibliografia complementar}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}	
+\end{itemize}
+\nameref{tab:matriz}
+
+
+
+\newpage
+\section{Estudo orientado e prática profissional}\label{ementasEstudo}
+\indent
+
+Esta é uma disciplina de ementa aberta que visa assegurar tempos e espaços para que os estudantes reflitam sobre suas experiências e aprendizagens individuais e interpessoais, de modo a valorizarem o conhecimento, confiarem em sua capacidade de aprender, e identificarem e utilizarem estratégias mais eficientes a seu aprendizado~\cite{BNCC2019}.
+
+Alicerçados no conhecimento e na inovação, e promovendo a aprendizagem colaborativa, a disciplina de estudos orientados e prática profissional desenvolve nos estudantes a capacidade de trabalharem em equipe e aprenderemcom seus pares, além de estimular atitudes cooperativas e propositivas preparando-os para os desafios da comunidade, do mundo do trabalho e da sociedade em geral.
+Desta forma, o objetivo da disciplina atenda simultaneamente à meta da BNCC garantindo a contextualização dos conhecimentos, articulando as dimensões do trabalho, da ciência, da tecnologia e da cultura~\cite{BNCC2019} e à Resolução 06 de 20 de setembro de 2012, onde:
+\begin{quote}
+	\textit{A prática profissional, prevista na organização curricular do curso, deve estar continuamente relacionada aos seus fundamentos científicos e tecnológicos, orientada pela pesquisa como princípio pedagógico que possibilita ao educando enfrentar o desafio do desenvolvimento da aprendizagem permanente, integra as cargas horárias mínimas de cada habilitação profissional de técnico e correspondentes etapas de qualificação e de especialização profissional técnica de nível médio}~\cite{Resolucao06De2012}.
+\end{quote}
+
+
+\subsection{Estudo orientado e prática profissional}\label{disc:estudo}
+\begin{itemize}
+	\item \textbf{Carga horária (hora/aula):} 216
+	\item \textbf{Docente Responsável:}
+	\item \textbf{Conceitos-Chave:}
+	\begin{itemize}
+		\item NNNNN
+		\item NNNNN
+	\end{itemize}
+	\item \textbf{Ementa:} Momento presencial com carga horária de 4 horas por semana para estudos dirigidos interdisciplinares; Debates de temas com dois grupos: um pró e um contra;
+	\item \textbf{Bibliografia básica}
+	\begin{enumerate}
+		\item NNNNN
+	\end{enumerate}
+	\item \textbf{Bibliografia complementar}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}	
+\end{itemize}
+\nameref{tab:matriz}
 
 \newpage
 \section{Ementas do Núcleo Profissional}\label{ementasTecnico}
@@ -1207,10 +1230,11 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 		\item NNNNN
 		\item NNNNN
 	\end{itemize}
-	\item \textbf{Ementa:} 
+	\item \textbf{Ementa 1º semestre:}	
 	Zoologia: classificação, organização e fisiologia;
 	Fundamentos de regulação homestática, nutrição, digestão, metabolismo, o smorregulação e excreção, ventilação e circulação, músculo e movimento, regulação neuroendócrina, reprodução, Coordenação e interação dos organismos animais, evolução e filogênese do sistema nervoso; 
 	Sistema sensorial e motor de invertebrados e vertebrados; 
+	\item \textbf{Ementa 2º semestre:}	
 	Técnicas de controle de pragas \textit{in vivo} e \textit{in vitro};
 	Biotecnologia Animal no Brasil e no mundo; 
 	Situação atual e perspectivas.
@@ -1223,7 +1247,7 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 		\item 
 	\end{enumerate}	
 \end{itemize}
-
+\nameref{tab:matriz}
 
 \newpage
 \subsection{Biotecnologia vegetal}\label{disc:biotecVegetal}
@@ -1235,7 +1259,7 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 		\item NNNNN
 		\item NNNNN
 	\end{itemize}
-	\item \textbf{Ementa:} 
+	\item \textbf{Ementa 1º semestre:}	
 	Botânica: Classificação, Organização e Fisiologia; 
 	Anatomia dos órgãos vegetativos e reprodutivos;
 	Estruturas, primária e secundária, das raízes e dos caules; 
@@ -1244,6 +1268,7 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 	Respiração; 
 	Fotossíntese;
 	O fluxo de energia nas plantas; 
+	\item \textbf{Ementa 2º semestre:}	
 	Protistas fotossintetizantes, briófitas, plantas vasculares sem sementes, gimnospermas e divisão anthophyta: tecidos simples e complexos; 
 	Hormônios Vegetais; 
 	Fatores externos e crescimento vegetal; 
@@ -1258,7 +1283,7 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 		\item 
 	\end{enumerate}	
 \end{itemize}
-
+\nameref{tab:matriz}
 
 \newpage
 \subsection{Biotecnologia de alimentos}\label{disc:biotecAlimentos}
@@ -1270,10 +1295,11 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 		\item NNNNN
 		\item NNNNN
 	\end{itemize}
-	\item \textbf{Ementa:} 
+	\item \textbf{Ementa 1º semestre:}	
 	Introdução aos princípios e processos tecnológicos envolvidos no processamento de alimentos;
 	Estudos das modificações bioquímicas dos alimentos durante o desenvolvimento, armazenamento e processamento;
 	Fundamentos da produção biotecnológica para o desenvolvimento de produtos e processos alimentícios (carnes, laticínios, cereais vegetais, ovo, pães, aditivos e derivados);
+	\item \textbf{Ementa 2º semestre:}	
 	Boas práticas de manufatura;
 	Análise de risco e pontos críticos de controle;
 	Conservação de alimentos;
@@ -1288,7 +1314,7 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 		\item 
 	\end{enumerate}	
 \end{itemize}
-
+\nameref{tab:matriz}
 
 \newpage
 \subsection{Biotecnologia de fármacos e biodefensivos}\label{disc:biotecFarmacos}
@@ -1300,11 +1326,12 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 		\item NNNNN
 		\item NNNNN
 	\end{itemize}
-	\item \textbf{Ementa:} 
+	\item \textbf{Ementa 1º semestre:}	 
 	Pesquisa e Produção de biofármacos e biodefensivos em escala laboratorial e industrial;
-	Vacinas, antibióticos, antifúngicos, fatores sanguíneos, hormônios, interferons, interleucinas,
-	anticorpos monoclonais, enzimas; 
 	Fármacos de origem natural;
+	Enzimas;
+	\item \textbf{Ementa 2º semestre:}	
+	Vacinas, antibióticos, antifúngicos, fatores sanguíneos, hormônios, interferons, interleucinas, anticorpos monoclonais; 
 	\item \textbf{Bibliografia básica}
 	\begin{enumerate}
 		\item NNNNN
@@ -1314,31 +1341,25 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 		\item 
 	\end{enumerate}	
 \end{itemize}
-
+\nameref{tab:matriz}
 
 \newpage
 \subsection{Biotecnologia humana e saúde}\label{disc:biotecSaude}
 \begin{itemize}
-	\item \textbf{Carga horária (hora/aula):} 108
+	\item \textbf{Carga horária (hora/aula):} 54
 	\item \textbf{Docente Responsável:}
 	\item \textbf{Conceitos-Chave:}
 	\begin{itemize}
 		\item NNNNN
 		\item NNNNN
 	\end{itemize}
-	\item \textbf{Ementa:} 
-	Introdução à Genética;
-	Probabilidade e teste de proporções genéticas; 
-	Mendelismo: os princípios básicos da herança; 
-	Extensões do mendelismo; 
-	Genes ligados ao sexo em seres humanos;
-	Genética quantitativa: modelos para cor da pele humana e discussão das questões étnico-raciais à luz da genética moderna;
-	Variação no número e estrutura dos cromossomos;
+	\item \textbf{Ementa 1º semestre:}	
 	Relação dos parasitos e seus efeitos no sistema imune do hospedeiro; 
 	Identificação dos parasitos que acometem o homem e alguns os animais domésticos: protozoologia, helmintologia, entomologia e acarologia, as formas de transmissão e diagnósticos laboratoriais; 
 	Epidemiologia e profilaxia; 
 	Estudo dos mecanismos da resposta imune inata e adaptativa; 
 	Reconhecimento de antígenos; 
+	\item \textbf{Ementa 2º semestre:}		
 	Maturação, ativação e regulação dos linfócitos;
 	Mecanismos efetores envolvidos na resposta imune;
 	Processos patológicos decorrentes de alterações nos mecanismos normais de resposta imunológica;
@@ -1351,6 +1372,71 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 		\item 
 	\end{enumerate}	
 \end{itemize}
+\nameref{tab:matriz}
+
+
+\newpage
+\subsection{Microbiologia}\label{disc:microbiologia}
+\begin{itemize}
+	\item \textbf{Carga horária (hora/aula):} 108
+	\item \textbf{Docente Responsável:}
+	\item \textbf{Conceitos-Chave:}
+	\begin{itemize}
+		\item NNNNN
+		\item NNNNN
+	\end{itemize}
+	\item \textbf{Ementa 1º semestre:}
+	Introdução e histórico da microbiologia; 
+	Microrganismos: classificação, citologia, morfologia, metabolismo, crescimento, controle do crescimento, genética e técnicas microbiológicas;
+	\item \textbf{Ementa 2º semestre:}
+	Microbiologia industrial; 
+	Principais microrganismos e bioprodutos industriais: produção, melhoramento e características gerais;	
+	\item \textbf{Bibliografia básica}
+	\begin{enumerate}
+		\item NNNNN
+	\end{enumerate}
+	\item \textbf{Bibliografia complementar}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}	
+\end{itemize}
+\nameref{tab:matriz}
+
+
+\newpage
+\subsection{Fermentação}\label{disc:fermentacao}
+\begin{itemize}
+	\item \textbf{Carga horária (hora/aula):} 54
+	\item \textbf{Docente Responsável:}
+	\item \textbf{Conceitos-Chave:}
+	\begin{itemize}
+		\item NNNNN
+		\item NNNNN
+	\end{itemize}
+	\item \textbf{Ementa 1º semestre:}
+	Fermentação industriais;
+	Conceituação de processo fermentativo; 
+	Microrganismos para utilização industrial; 
+	Matérias primas e meios de fermentação para utilização industrial; 
+	Principais etapas de um processo fermentativo; 
+	Classificação dos processos fermentativos quanto ao desenvolvimento do agente, regime de condução do processo e necessidade de oxigênio;
+	Produtos do metabolismo microbiano de interesse na indústria farmacêutica, de alimentos e afins; 
+	Enzimologia industrial; 
+	\item \textbf{Ementa 2º semestre:}	
+	Cinética de crescimento microbiano;
+	Esterilização de equipamentos, meios e ar;
+	Biorreatores;
+	Bioprocessos.;
+	\item \textbf{Bibliografia básica}
+	\begin{enumerate}
+		\item NNNNN
+	\end{enumerate}
+	\item \textbf{Bibliografia complementar}
+	\begin{enumerate}
+		\item 
+	\end{enumerate}	
+\end{itemize}
+\nameref{tab:matriz}
 
 
 \newpage
@@ -1363,11 +1449,12 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 		\item NNNNN
 		\item NNNNN
 	\end{itemize}
-	\item \textbf{Ementa:} 
+	\item \textbf{Ementa 1º semestre:}
 	Técnicas e metodologias de extração e purificação: extração líquido-líquido, extração em fase sólida, extração com fluido supercrítico e extração com membranas sólidas (diálise e ultrafiltração) ou líquidas, infusão, decocção, percolação, teoria do soxhlet, arraste por vapor d’água, turbólize, maceração e variáveis, ultrassom, agitação mecânica, cristalização, centrifugação, adsorção, dissolução, filtração, concentração, liofilização; 
 	Técnicas e metodologias de separação: cromatografia, eletroforese: tipos, definições carcaterísticas gerais, procedimentos, exemplos. 
 	Técnicas e metodologias de identificação de compostos orgânicos: ressonância magnética nuclear, espectroscopia no infravermelho, ultra-violeta e visível e espectrometria de massas; 
-	Aulas práticas de extração, separação e identificação e substâncias;
+	\item \textbf{Ementa 2º semestre:}
+	Extração, separação e identificação e substâncias;
 	Introdução ao controle de qualidade; 
 	Ferramentas de qualidade; 
 	Sistemas e gestão da qualidade;
@@ -1381,20 +1468,20 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 		\item 
 	\end{enumerate}	
 \end{itemize}
-
+\nameref{tab:matriz}
 
 
 \newpage
 \subsection{Físico Química e Química Analítica}\label{disc:analitica}
 \begin{itemize}
-	\item \textbf{Carga horária (hora/aula):} 54
+	\item \textbf{Carga horária (hora/aula):} 108
 	\item \textbf{Docente Responsável:}
 	\item \textbf{Conceitos-Chave:}
 	\begin{itemize}
 		\item NNNNN
 		\item NNNNN
 	\end{itemize}
-	\item \textbf{Ementa:} 
+	\item \textbf{Ementa 1º semestre:}
 	%Reações de complexação; 	
 	%Marcha geral de análise; 	
 	%Volumetria de complexação;
@@ -1407,6 +1494,7 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 	Reações Redox; 
 	Método gráfico para determinação e especiação das espécies químicas estudadas;
 	Análise sistemática x Análise assistemática: análise de cátions; 
+	\item \textbf{Ementa 2º semestre:}
 	Métodos quantitativos;
 	Amostragem; 
 	Medição em química analítica; 
@@ -1427,36 +1515,8 @@ O núcleo profissional contempla métodos, técnicas, ferramentas e outros eleme
 		\item 
 	\end{enumerate}	
 \end{itemize}
+\nameref{tab:matriz}
 
-\newpage
-\section{Estudo orientado e debates}\label{ementasEstudo}
-\indent
-
-Esta é uma disciplina de ementa aberta que visa assegurar tempos e espaços para que os estudantes reflitam sobre suas experiências e aprendizagens individuais e interpessoais, de modo a valorizarem o conhecimento, confiarem em sua capacidade de aprender, e identificarem e utilizarem estratégias mais eficientes a seu aprendizado~\cite{BNCC2019}.
-
-Alicerçados no conhecimento e na inovação, e promovendo a aprendizagem colaborativa, os estudos orientado e debates desenvolvem nos estudantes a capacidade de trabalharem em equipe e aprenderemcom seus pares, além de estimular atitudes cooperativas e propositivas preparando-os para os desafios da comunidade, do mundo do trabalho e da sociedade em geral.
-Desta forma, o objetivo da disciplina atendo à meta da BNCC garantindo a contextualização dos conhecimentos, articulando as dimensões do trabalho, da ciência, da tecnologia e da cultura~\cite{BNCC2019}.
-
-
-\subsection{Estudo orientado e debates}\label{disc:estudo}
-\begin{itemize}
-	\item \textbf{Carga horária (hora/aula):} 324
-	\item \textbf{Docente Responsável:}
-	\item \textbf{Conceitos-Chave:}
-	\begin{itemize}
-		\item NNNNN
-		\item NNNNN
-	\end{itemize}
-	\item \textbf{Ementa:} Momento presencial com carga horária de 8 horas por semana para estudos dirigidos interdisciplinares; Debates de temas com dois grupos: um pró e um contra;
-	\item \textbf{Bibliografia básica}
-	\begin{enumerate}
-		\item NNNNN
-	\end{enumerate}
-	\item \textbf{Bibliografia complementar}
-	\begin{enumerate}
-		\item 
-	\end{enumerate}	
-\end{itemize}
 
 
 %----------------------------------------------------------------------------------------
@@ -1661,9 +1721,6 @@ Endereço: XXXXX\\
 Telefone: XXXXX \\
 Twitter:XXXXXX \\
 E-mails: XXXXXXX
-
-
-
 
 
 % ----------------------------------------------------------------------------------------
